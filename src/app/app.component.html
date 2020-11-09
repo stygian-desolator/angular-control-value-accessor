@@ -1,0 +1,12 @@
+<p>Used in form group</p>
+<div>
+  <form [formGroup]="formGroup">
+    <app-counter formGroupName="counter"></app-counter>
+  </form>
+</div>
+
+<p>Used with ngModel</p>
+<div>
+  <app-counter [(ngModel)]="counter"></app-counter>
+  <span> outer: {{ counter }}</span>
+</div>
